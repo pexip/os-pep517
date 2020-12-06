@@ -1,0 +1,21 @@
+From: Scott Kitterman <scott@kitterman.com>
+Date: Fri, 27 Mar 2020 01:27:20 -0400
+Subject: Do not include flake8 tests when running tests
+
+Forwarded: not-needed
+Origin: vendor
+Last-Update: 2020-01-24
+
+The flake8 tests are not helpful in a Debian context.  They are only
+usefult for upstream development.
+---
+ pytest.ini | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/pytest.ini b/pytest.ini
+index 5c37966..eea2c18 100644
+--- a/pytest.ini
++++ b/pytest.ini
+@@ -1,2 +1 @@
+ [pytest]
+-addopts=--flake8

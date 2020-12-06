@@ -1,0 +1,3 @@
+Tests: py3
+Depends: @, python3-all, python3-importlib-metadata, python3-mock, python3-pip, python3-pytest, python3-setuptools, python3-testpath, python3-toml, python3-zipp,
+Restrictions: allow-stderr

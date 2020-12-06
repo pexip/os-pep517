@@ -1,0 +1,11 @@
+#! /bin/sh
+
+#!/bin/bash
+set -e
+
+# Test for all supported python3 versions so we find out if there are any
+# issues with a new python3 version before it is the default version.
+for py3vers in $(py3versions -s); do
+    echo "Testing with $py3vers:"
+    $py3vers -m pytest tests
+done

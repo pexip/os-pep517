@@ -1,0 +1,62 @@
+pep517 (0.9.1-1) unstable; urgency=medium
+
+  * Team upload.
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sergio Durigan Junior ]
+  * New upstream version 0.9.1
+  * d/control: Bump Standards-Version to 4.5.1.
+  * d/control: Bump debhelper-compat to 13.
+  * d/watch: Bump version to 4.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Sat, 05 Dec 2020 23:49:38 -0500
+
+pep517 (0.8.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add python3-mock to test depends
+
+ -- Scott Kitterman <scott@kitterman.com>  Wed, 01 Apr 2020 17:38:29 -0400
+
+pep517 (0.8.1-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #954256)
+    - Refresh patches
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 27 Mar 2020 01:29:10 -0400
+
+pep517 (0.7.0-4) unstable; urgency=medium
+
+  * Patch setup.py to build with setuptools so there is enough metadata for
+    dirtbike to build the wheel for pip
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 15 Mar 2020 00:35:57 -0400
+
+pep517 (0.7.0-3) unstable; urgency=medium
+
+  * Add python3-all to d/t/control so autopkgtest against all supported
+    python3 versions will work
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 25 Jan 2020 21:06:22 -0500
+
+pep517 (0.7.0-2) unstable; urgency=medium
+
+  * Update debian/copyright based on FTP Master feedback
+  * Fix too long line in extended description
+  * Add description to no-flake8.patch
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 25 Jan 2020 14:59:53 -0500
+
+pep517 (0.7.0-1) unstable; urgency=medium
+
+  * Initial Debian package (Closes: #949784)
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 24 Jan 2020 17:48:59 -0500

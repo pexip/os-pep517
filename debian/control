@@ -1,0 +1,33 @@
+Source: pep517
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Scott Kitterman <scott@kitterman.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Vcs-Git: https://salsa.debian.org/python-team/packages/pep517.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/pep517
+Standards-Version: 4.5.1
+Homepage: https://pypi.org/project/pep517
+
+Package: python3-pep517
+Architecture: all
+Depends: python3-importlib-metadata,
+         python3-toml,
+         python3-zipp,
+         ${misc:Depends},
+         ${python3:Depends}
+Description: Specifies a standard API for systems which build Python packages
+ This package contains wrappers around the hooks specified by PEP 517. It
+ provides:
+ .
+  - A mechanism to call the hooks in a subprocess, so they are isolated from
+    the current process.
+  - Fallbacks for the optional hooks, so that frontends can call the hooks
+    without checking which are defined.
+  - Higher-level functions which install the build dependencies into a
+    temporary environment and build a wheel/sdist using them.
+ .
+ This is the Python 3 version of the package.
