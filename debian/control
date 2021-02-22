@@ -1,9 +1,10 @@
 Source: pep517
 Section: python
 Priority: optional
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: Scott Kitterman <scott@kitterman.com>
-Build-Depends: debhelper-compat (= 13),
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders: Scott Kitterman <scott@kitterman.com>
+Build-Depends: debhelper-compat (= 12),
                dh-python,
                python3-all,
                python3-setuptools
@@ -11,6 +12,7 @@ Vcs-Git: https://salsa.debian.org/python-team/packages/pep517.git
 Vcs-Browser: https://salsa.debian.org/python-team/packages/pep517
 Standards-Version: 4.5.1
 Homepage: https://pypi.org/project/pep517
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bullseye
 
 Package: python3-pep517
 Architecture: all
